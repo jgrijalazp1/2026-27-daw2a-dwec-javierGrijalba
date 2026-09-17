@@ -6,3 +6,6 @@ a/
 
 # archivos de configuracion de vscode para "este" repo
 .vscode/
+
+Thumbs.db
+.DS_Store
