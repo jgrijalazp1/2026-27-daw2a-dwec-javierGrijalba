@@ -1,1 +1,8 @@
+# la carpeta "a" y todo su contenido
 a/
+
+# archivos de registro y logs
+*.log
+
+# archivos de configuracion de vscode para "este" repo
+.vscode/
