@@ -22,10 +22,14 @@ let texto2 = 'Una frase con "comillas dobles" dentro';
 let texto1 = "Una frase con 'comillas simples' dentro"; 
 let texto2 = 'Una frase con "comillas dobles" dentro'; 
 
-function alertSalto(texto1, texto2){
+function saltoDeLinea(){
     alert(texto1 + "\n" + texto2);
 }
 
-function holaMundo(){
+function comillas(){
     alert("Hola Mundo! Que facil es incluir 'comillas simples' y \"comillas dobles\n");
 }
+
+
+
+
