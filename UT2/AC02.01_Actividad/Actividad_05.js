@@ -1,5 +1,6 @@
 /*
-Actividad 05 — Comparaciones de igualdad débil frente a igualdad estricta (Teórico-Práctica) 
+Actividad 05 — Comparaciones de igualdad débil frente a igualdad 
+estricta (Teórico-Práctica) 
 
 Escribe  un  script  JavaScript  que  implemente  un  código  de  prueba  para  
 analizar  detalladamente  la diferencia  operativa  entre  los  operadores  de  
