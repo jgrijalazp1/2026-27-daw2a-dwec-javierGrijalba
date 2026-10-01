@@ -10,7 +10,7 @@ conversiones  de  tipo implícitas frente a la comparación estricta de valor
 y tipo de dato. 
 
 */
-
+ 
 let numero1 = 1;
 let numero2 = 0;
 let cadena1 = "";
