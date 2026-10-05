@@ -11,23 +11,23 @@ Creo que esto ultimo lo he estado haciendo en todos los ejercicios.
 
 */
 
-numerosPrimos = primosHasta(100);
+let numerosPrimos = primosHasta(100);
 
 // El codigo es mas reutilizable si se puede cambiar el limite superior
 function primosHasta(num){
     primos = [];
 
-    for(candidato = num; candidato > 1; candidato--)
+    for(let candidato = num; candidato > 1; candidato--)
         if(esPrimo(candidato)){
             primos.push(candidato);
         }
-    // porque 1 siempre es primo y es mas facil así.
-    primos.push(1);
+    // porque 1 NUNCA ES PRIMO!!!
+    // primos.push(1);
     return primos; 
 }
 
 function esPrimo(num){
-    for(i = num - 1; i > 1; i--){
+    for(let i = num - 1; i > 1; i--){
         if(num % i == 0){return false};
     }
     return true;

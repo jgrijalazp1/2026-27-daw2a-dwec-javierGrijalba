@@ -21,5 +21,5 @@ for(i = num - 1; i > 1; i--){
     factorial *= i;
 }
 
-alert(`Factorial de ${num}: ${factorial}`);
+document.getElementById("parrafo").innerText = `Factorial de ${num}: ${factorial}`;
 

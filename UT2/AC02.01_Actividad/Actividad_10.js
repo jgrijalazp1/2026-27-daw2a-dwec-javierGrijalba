@@ -15,15 +15,16 @@ exactamente el siguiente:
 Utiliza bucles anidados en la implementación de la lógica.
 */
 
-salida = "";
+let salida = "";
+let num;
 
 do{
-    num = prompt("Introduce un numero mayor que 1: ");
+    num = window.prompt("Introduce un numero mayor que 1: ");
     num = Number(num);
 }while( !Number.isInteger(num) ||  num < 1);
 
-for(i = 0; i <= num; i++){
-    for(j = 0; j <= i; j++){
+for(let i = 1; i <= num; i++){
+    for(let j = 1; j <= i; j++){
        salida += "*";
     };
     salida += "\n";
