@@ -1,0 +1,26 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.colorTheme": "Solarized Light",
+    "files.autoSave": "afterDelay",
+    "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+    "php.executablePath": "C:\\xampp\\php\\php.exe",
+    "php.debug.executablePath": "C:\\xampp\\php\\php.exe",
+    "editor.formatOnSave": true,
+    "code-runner.executorMap": {
+        "php": "C:\\xampp\\php\\php.exe"
+    },
+    "phpserver.phpConfigPath": "",
+    "intelliphp.inlineSuggestionsEnabled": true,
+    "php.debug.port": 9003,
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 16,
+    "vs-code-prettier-eslint.prettierLast": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+}
