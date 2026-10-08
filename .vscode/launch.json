@@ -10,6 +10,13 @@
       "name": "Chrome (Live Server)",
       "url": "http://localhost:5500/${relativeFile}"
       // "webRoot": "${fileDirnameBasename}"
+    },
+    {
+      "type": "firefox",
+      "request": "launch",
+      "name": "Firefox (Live Server)",
+      "url": "http://localhost:5500/${relativeFile}"
+      // "webRoot": "${fileDirnameBasename}"
     }
   ]
 }

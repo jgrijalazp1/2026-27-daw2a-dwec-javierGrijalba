@@ -1,0 +1,33 @@
+
+# Archivos y carpetas específicos de Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Ignorar áreas de trabajo y extensiones empaquetadas
+*.code-workspace
+*.vsix
+Usa el código con precaución.
+💡 Qué hace exactamente esta configuración:
+• Ignora la carpeta .vscode/ por defecto: Evita que subas configuraciones temporales de tu editor.
+• Permite excepciones esenciales: Las líneas que empiezan con ! obligan a Git a incluir archivos clave como settings.json o launch.json. Esto es muy útil si compartes con tu equipo las extensiones recomendadas o la configuración de depuración (debugging) del proyecto.
+🔧 Cómo aplicarlo en tu proyecto
+Opción 1: Creación manual (Recomendado)
+1. Abre tu proyecto en Visual Studio Code.
+2. En la raíz de tu proyecto, crea un nuevo archivo llamado exactamente .gitignore (asegúrate de incluir el punto al principio).
+3. Pega el bloque de código de arriba y guarda el archivo.
+Opción 2: Usar una extensión para automatizarlo
+Si manejas múltiples lenguajes (Node.js, Python, Java) y quieres generar archivos completos rápidamente, puedes instalar la extensión .gitignore Generator en la Visual Studio Marketplace:
+1. Ve al panel de Extensiones (Ctrl+Shift+X) y busca .gitignore Generator.
+2. Abre la Paleta de comandos (Ctrl+Shift+P o F1).
+3. Escribe Generate .gitignore File.
+4. Selecciona tu entorno (por ejemplo, VisualStudioCode junto con los lenguajes de tu proyecto) y el archivo se creará de forma automática.
+⚠️ Nota importante: Si ya habías hecho un commit con los archivos de .vscode antes de crear el .gitignore, Git los seguirá rastreando. Para quitarlos de la memoria de Git sin borrarlos de tu disco duro, ejecuta este comando en tu terminal:
+git rm -r --cached .vscode
+¿Qué lenguaje de programación o framework estás utilizando en este proyecto? Si me lo dices, puedo darte el archivo listo para combinar las reglas de VS Code con las de tu entorno específico (como Node.js, Python o PHP).
+Las respuestas de la IA pueden contener errores. Más información
+
+Grabaciones_Examenes/
