@@ -8,7 +8,4 @@
 */
 
 let ahora = new Date;
-console.log(ahora.getHours());
-console.log(ahora.getMinutes());
-console.log(ahora.getSeconds());
 document.getElementById("hora").innerHTML = (`${ahora.getHours()}:${ahora.getMinutes()}:${ahora.getSeconds()}`); 
