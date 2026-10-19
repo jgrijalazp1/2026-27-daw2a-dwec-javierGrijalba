@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        Prueba los siguientes fragmentos de codigo e intenta entender como gestiona
+        JavaScript fechas erroneas. 
+        */
+        
+        // Si Date recibe un numero de mes o dia que exceda el rango disponible, en 
+        // vez de generar un error, vuelve a empezar el ciclo de meses, dias o años.
+        alert("Fecha de 30 de Febrero 2000:"+new Date(2000, 1, 30));
+        
+        // Si el dia es superior al dia maximo posible de ese mes, pasa al mes siguiente
+        // y pone como dia los restantes. En este caso, como enero tiene 31 dias, pasa
+        // al mes siguiente, febrero y pone los dias que sobran, 2.
+        alert("Fecha de 33 de Febrero 2000:"+new Date(2000, 1, 33));
+        
+        // Hace lo mismo con los meses. Como un año solo tiene 12 meses, cuenta todos ellos
+        // y despues sube de año, y pone como meses los que quedaban.
+        alert("Fecha de 30 del mes 14 2000:"+new Date(2000, 14, 30));
+
+        // No importa cuantas veces tenga que volver a dar la vuelta al ciclo de 
+        // meses, dias o años, lo hará hasta que sea necesario
+        alert("Fecha de 30 del mes 23 2000:"+new Date(2000, 23, 30));
+
+        // En este caso, Date devuelve "Sat Mar 02 2002 00:00:00 GMT+0100". 25 meses
+        // son 2 años y un mes, asi que salta a 2002 y el segundo mes, Febrero. Pero como
+        // además se da el dia 30 y Febrero tiene como máximo 29 dias, pasa al siguiente:
+        // Marzo
+        alert("Fecha de 30 del mes 25 2000:"+new Date(2000, 25, 30));
+    </script>
+</body>
+</html>

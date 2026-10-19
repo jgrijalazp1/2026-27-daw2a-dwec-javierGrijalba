@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Pido los datos al usuario
+        let nombre = prompt("Introduce tu nombre: ");
+        let apellidos = prompt("Introduce tus apellidos: ");
+        let ciudad = prompt("Introduce tu ciudad: ");
+
+        // Valido que las cadenas no esten vacias
+        if(nombre == '' || apellidos == '' || ciudad == ''){
+            alert("Datos no validos");
+            exit();
+        }
+
+        // Construyo el mensaje de salida y lo emito
+        let salida = "FICHA DE USUARIO REGISTRADO";
+        salida +=  "\n---------------------------";
+        salida +=  "\nNombre completo: " + nombre + " " + apellidos;
+        salida +=  "\nCiudad: " + ciudad;
+        alert(salida);
+
+    </script>
+</body>
+</html>

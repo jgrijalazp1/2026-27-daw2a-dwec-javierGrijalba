@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Solicito el precio original y el descuento
+        let precioOriginal = prompt("Precio original: ");
+        let descuento = prompt("Porcentaje de descuento (0 - 100%): ");
+
+        // Convierto ambos valores a float explicitamente
+        precioOriginal = Number.parseFloat(precioOriginal);
+        descuento = Number.parseFloat(descuento);
+
+        // Valido que precioOriginal sea numero
+        if(Number.isNaN(precioOriginal)){
+            alert("Precio original no valido");
+            exit();
+        }
+
+        // Valido que descuento sea numero y este entre 0 y 100
+        if(Number.isNaN(descuento) || descuento < 0 || descuento > 100){
+            alert("Descuento no valido");
+            exit();
+        }
+
+        // Calculo el importe a descontar y el precio final
+        let importeDescontado = precioOriginal * descuento / 100;
+        let precioFinal = precioOriginal - importeDescontado;
+
+        // Construyo el mensaje a devolver y lo emito
+        let mensaje = "DESGLOSE DE CÁLCULO DE PRECIO\n"
+        mensaje +=  "\n-----------------------------";
+        mensaje +=  "\nPrecio original: " + precioOriginal.toFixed(2) + " €";
+        mensaje +=  "\nDescuento aplicado (" + descuento + "%): " + importeDescontado.toFixed(2) + " €";
+        mensaje +=  "\n-----------------------------";
+        mensaje +=  "\nPrecio final resultante: " + precioFinal.toFixed(2)+ " €";
+        alert(mensaje);
+
+    </script>
+</body>
+</html>

@@ -29,6 +29,11 @@ alert(String(15));
 alert((15).toString(2));
 alert((15).toString (16));
 
+/**
+ * Description placeholder
+ *
+ * @type {string}
+ */
 let aa = 'The Three Musketeers';
 a.substring (4, 9);
 a.substring(9, 4);
