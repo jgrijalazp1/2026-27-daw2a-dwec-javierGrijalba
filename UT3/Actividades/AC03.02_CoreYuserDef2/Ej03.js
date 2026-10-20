@@ -14,6 +14,7 @@ Realiza una página web que incluya un script JavaScript que:
 
 let dni;
 let mensjDni = "Introduzca un dni válido: ";
+
 do{
     dni = prompt(mensjDni);
     if(!valido(dni)){
@@ -22,17 +23,24 @@ do{
 }while(!valido(dni));
 
 // Si el usuario pulsa 'cancelar' en el dialogo prompt, asumo que quiere
-// habandonar la ejecucion del programa.
-if(dni != null){return;}
+// habandonar la ejecucion del programa. Lanzar una excepcion es la mejor
+// forma que conozco para cortar la ejecucion, aunque produce un error por
+// no capturar la excepcion.
+if(dni == null){
+    throw new Error("Hasta luego, cocodrilo");
+}
+
+console.log(`El dni es ${dni}`);
+
 
 // Admito 'null' como valor aceptable para 'dni' porque significa que el
 // usuario a pulsado 'cancelar', en cuyo caso debe salir del bucle y 
 // terminar el programa.
 function valido(dni){
-    if(dni == null){
-        return true;
-    }else if(dni == '' || String.length(dni) <= 0){
+    if(dni == null){return true;}
 
-    }
+    if(dni == '' || dni.length != 9){ return false;}
+    // Por si hay algun caso que no he tenido en cuenta
+    return true;
 
 }
