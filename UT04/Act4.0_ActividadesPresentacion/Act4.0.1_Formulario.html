@@ -15,14 +15,15 @@
 
         const form = document.getElementById("formulario1");
         const cajaTexto = document.getElementById("txt1");
-        const lectura = document.getElementById("btnLectura");
+        const BTNlectura = document.getElementById("btnLectura");
         const edicion = document.getElementById("btnEdicion");
 
-        lectura.addEventListener("click", function (){
+        BTNlectura.addEventListener("click", function (e){
             alert(cajaTexto.value);
         });
 
-        edicion.addEventListener("click", function(){
+        edicion.addEventListener("click", function(event){
+            event.preventDefault();
             let nuevoTexto = prompt("Introduce nuevo texto: ");
             //cajaTexto.innerHTML = nuevoTexto;
             cajaTexto.value = nuevoTexto;
