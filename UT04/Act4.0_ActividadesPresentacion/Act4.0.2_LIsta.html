@@ -6,11 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="Act4.0.1_Formulario.js" defer></script>
-    <form id="formulario1">
-        <input type="text" id="txt1"></textarea>
-        <button id="btnLectura">Lectura</button>
-        <button id="btnEdicion">Edicion</button>
-    </form>
+        <form id="formulario1">
+            <fieldset name="Actividad 2: Lista Desplegable">
+                <select name="Colores" id="selectColores">
+                    <option value="amarillo">Amarillo</option>
+                    <option value="verde">Verde</option>
+                    <option value="rojo">Rojo</option>
+                </select>
+                <button id="btnConfirmar">Confirmar</button>
+                <label id="lblResultado" style="background-color: aqua;">     </label>
+            </fieldset>
+        </form>
+    <script defer>
+        const lista = document.getElementById("selectColores");
+        const resul = document.getElementById("lblResultado");
+        
+        resul.addEventListener("click", function(){
+            resul.innerText = lista.value;
+        });
+        
+    </script>
 </body>
 </html>
