@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formulario1">
+        <input type="text" id="txt1"></textarea>
+        <button id="btnLectura">Lectura</button>
+        <button id="btnEdicion">Edicion</button>
+    </form>
+    <script defer>
+
+        const form = document.getElementById("formulario1");
+        const cajaTexto = document.getElementById("txt1");
+        const lectura = document.getElementById("btnLectura");
+        const edicion = document.getElementById("btnEdicion");
+
+        lectura.addEventListener("click", function (){
+            alert(cajaTexto.value);
+        });
+
+        edicion.addEventListener("click", function(){
+            let nuevoTexto = prompt("Introduce nuevo texto: ");
+            //cajaTexto.innerHTML = nuevoTexto;
+            cajaTexto.value = nuevoTexto;
+        });
+
+    </script>
+</body>
+</html>
