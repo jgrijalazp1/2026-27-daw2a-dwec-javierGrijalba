@@ -7,7 +7,8 @@ window.onload = function(){
     /* let resultado = document.getElementById('resultado').value;
     let valor = opener.document.getElementById('color').value;
     resultado = valor; */
-
+    debugger;
+    let lalala = opener.document.getElementById("color").value;
     document.getElementById('resultado').value = 
     opener.document.getElementById('color').value;
 };
