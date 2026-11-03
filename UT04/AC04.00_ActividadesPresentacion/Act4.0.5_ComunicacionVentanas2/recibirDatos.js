@@ -1,4 +1,4 @@
 window.onload = function(){
     console.log("lalala");
-    console.log("lololo");
+    console(opener.getElementById("color").value);
 };
