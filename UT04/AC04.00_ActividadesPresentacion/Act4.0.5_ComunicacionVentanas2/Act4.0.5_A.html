@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <select id="color">
+            <option value="Amarillo">Amarillo</option>
+            <option value="Verde">Verde</option>
+            <option value="Rojo">Rojo</option>
+        </select>
+        <input id="boton" type="button" value="Selecciona color">
+    </form>
+    <script src="pasarDatos.js" defer> 
+        document.getElementById("boton").addEventListener("click", function(){
+            const color = document.getElementById("color");
+            const valor = color.selectElement.value; 
+            window.open("Act4.0.5_B.html", "_blank");
+        });
+    </script>
+</body>
+</html>
