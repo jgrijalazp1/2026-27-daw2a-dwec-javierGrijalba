@@ -1,0 +1,11 @@
+table{
+    border: 1px solid black;
+}
+
+input{
+    width: 105px;
+}
+
+button{
+    width: 25px;
+}
