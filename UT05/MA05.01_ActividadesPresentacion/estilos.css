@@ -1,0 +1,17 @@
+.contenedor {
+            display: flex;
+            gap: 20px; /* Space between the squares */
+            padding: 10px;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db; /* Blue color so they are visible */
+        }
+
+        .square-two {
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c; /* Red color to distinguish the second square */ 
+        }
