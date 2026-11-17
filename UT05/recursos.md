@@ -1,0 +1,6 @@
+- https://www.w3schools.com/jsref/dom_obj_event.asp
+- https://platzi.com/blog/eventos-del-mouse-en-javascript/
+- https://coveryourtracks.eff.org/
+- https://addons.mozilla.org/es-ES/firefox/addon/lightbeam-chikl/
+- https://regex101.com/
+- https://lenguajejs.com/eventos/eventos-navegador/keyboard-event/
