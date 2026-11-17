@@ -10,7 +10,7 @@ const lbPagina = document.getElementById("pagina");
 const lbCaracter = document.getElementById("caracter");
 const lbCodigo = document.getElementById("codigo");
 
-
+// Al mover el raton
 document.addEventListener("mousemove", (mover) => {
     // console.log(`PosX: ${mover.clientX}   PosY: ${mover.clientY}`);
     lbNavegador.innerText = `[${mover.clientX}, ${mover.clientY}]`;
