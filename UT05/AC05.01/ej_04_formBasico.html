@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <script src="ej_04_modificarForm.js" defer></script>
+
+    <form>
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="txtNombre" size="35" required><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="txtApellidos" size="35" required><br>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="txtDni" size="10" maxlength="9" required><br><br>
+
+        <label>Sexo:</label><br>
+            <input type="radio" id="hombre" name="sexo" value="hombre" checked>
+            <label for="hombre">Hombre</label><br>
+            
+            <input type="radio" id="mujer" name="sexo" value="mujer">
+            <label for="mujer">Mujer</label><br><br>
+        
+        <label for="fecha">Fecha de Nacimiento: </label>
+        <input type="date" min="2008-11-19" required><br><br>
+        <!-- TO-DO: en js, en el momento de la carga, definir el atributo 'min' en 
+                    funcion de la fecha actual menos 18 años -->
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="tel">Tlfn: </label>
+        <input type="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required><br><br>
+
+        <!-- No tiene sentido incluir un campo para la edad si ya se ha puesto uno 
+             para la fecha de nacimiento -->
+
+        <label for="foto">Incluir mi foto:</label>
+        <input type="file" id="foto"><br><br>
+
+        <input type="checkbox" id="publicidad" checked>
+        <label for="publicidad">Enviar publicidad</label><br>
+        <input type="submit" id="guardar" value="Guardar cambios">
+        <input type="reset" id="borrar" value="Borrar los datos introducidos">
+
+    </form>
+
+</body>
+</html>
+
+</body>
+</html>
