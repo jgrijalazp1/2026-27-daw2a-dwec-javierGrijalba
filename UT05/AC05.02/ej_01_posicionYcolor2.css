@@ -1,0 +1,13 @@
+.contenedor {
+    display: flex;
+    gap: 20px; /* Space between the squares */
+    padding: 10px;
+}
+
+    .cuadroRaton, .cuadroTeclado {
+        width: 150px;
+        height: 125px;
+        padding: 10px;;
+        /* background-color: #3498db; */ /* Blue color so they are visible */
+        border: solid black 1px;
+    }
