@@ -1,0 +1,9 @@
+table, td{
+    border: solid green 2px;
+    border-collapse: collapse;
+    /* text-align: center; */
+}
+
+td:last-child {
+  text-align: center;
+}
