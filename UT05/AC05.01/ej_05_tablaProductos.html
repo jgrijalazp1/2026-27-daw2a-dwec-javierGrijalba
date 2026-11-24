@@ -1,54 +1,91 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="ej_05_tablaProductos.css" />
-  </head>
-  <body>
-    <script src="ej_05_tablaProductos.js" defer></script>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="ej_05_tablaProductos.css" />
+   </head>
+   <body>
+      <script src="ej_05_tablaProductos.js" defer></script>
 
-    <form action="" method="post" id="formulario" name="formulario" onsubmit="">
-    
-        <!-- ======================  PRODUCTOS  ================ -->
-    
-        <table>
-            <th>Productos</th>
-            <tr>
-            <td><label for="IeWin">IE para Windows</label></td>
-            <td><input type="checkbox" id="IeWin" class="chk" value="IE para Windows"/></td>
-            </tr>
-            <tr>
-            <td><label for="IeMac">IE para Mac</label></td>
-            <td><input type="checkbox" id="IeMac" value="IE para Mac" /></td>
-            </tr>
-            <tr>
-            <td><label for="FfWin">FF para Windows</label></td>
-            <td><input type="checkbox" id="FfWin" value="FF para Windows" /></td>
-            </tr>
-            <tr>
-            <td><label for="FfMac">FF para Mac</label></td>
-            <td><input type="checkbox" id="FfMac" value="FF para Mac" /></td>
-            </tr>
-            <tr>
-            <td><label for="FfLin">FF para linux</label></td>
-            <td><input type="checkbox" id="FfLin" value="FF para linux" /></td>
-            </tr>
-            <tr>
-            <td colspan="2">
-                <input type="button" id="enviar" value="enviar" onclick="enviar" />
-            </td>
-            </tr>
-        </table>
+      <form
+         action=""
+         method="post"
+         id="formulario"
+         name="formulario"
+         onsubmit=""
+      >
+         <div class="contenedor">
+            <!-- ======================  PRODUCTOS  ================ -->
+            <table>
+               <th>Productos</th>
+               <tr>
+                  <td><label for="IeWin">IE para Windows</label></td>
+                  <td>
+                     <input
+                        type="checkbox"
+                        id="IeWin"
+                        class="productos"
+                        value="IE para Windows"
+                     />
+                  </td>
+               </tr>
+               <tr>
+                  <td><label for="IeMac">IE para Mac</label></td>
+                  <td>
+                     <input type="checkbox" id="IeMac" class="productos" value="IE para Mac" />
+                  </td>
+               </tr>
+               <tr>
+                  <td><label for="FfWin">FF para Windows</label></td>
+                  <td>
+                     <input
+                        type="checkbox"
+                        id="FfWin"
+                        class="productos"
+                        value="FF para Windows"
+                     />
+                  </td>
+               </tr>
+               <tr>
+                  <td><label for="FfMac">FF para Mac</label></td>
+                  <td>
+                     <input type="checkbox" id="FfMac" class="productos" value="FF para Mac" />
+                  </td>
+               </tr>
+               <tr>
+                  <td><label for="FfLin">FF para linux</label></td>
+                  <td>
+                     <input type="checkbox" id="FfLin" class="productos" value="FF para linux" />
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <input type="button" id="enviar" class="productos" value="enviar" />
+                  </td>
+               </tr>
+            </table>
 
-        <!-- ======================  PRODUCTOS  ================ -->
+            <!-- ======================  PRODUCTOS  ================ -->
 
-        <table>
-
-        </table>
-
-
-    </form>
-  </body>
+            <table>
+               <th>Sistemas Operativos</th>
+               <tr>
+                  <td><label for="win">Windows</label></td>
+                  <td><input type="checkbox" id="win" class="sistemas" value="Windows" /></td>
+               </tr>
+               <tr>
+                  <td><label for="mac">Mac</label></td>
+                  <td><input type="checkbox" id="mac" class="sistemas" value="Mac" /></td>
+               </tr>
+               <tr>
+                  <td><label for="lin">Windows</label></td>
+                  <td><input type="checkbox" id="lin" class="sistemas" value="Linux" /></td>
+               </tr>
+            </table>
+            <!-- ======================  PRODUCTOS  ================ -->
+         </div>
+      </form>
+   </body>
 </html>
